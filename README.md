@@ -2,35 +2,35 @@
 A website for users to browse through interior design ideas, find their style and an option to create a moodboard with furniture/materials information, all in one place.
 
 ## Project Description
-> A website for users to browse through interior design ideas, find their style and an option to create a moodboard with furniture/materials information, all in one place.
+A website for users to browse through interior design ideas, find their style and an option to create a moodboard with furniture/materials information, all in one place.
 
 
-> General App Idea/Purpose<br />
+## General App Idea/Purpose<br />
 Help users find home decor products information and find their style/inspo to redesign their homes.
+
+## Products Model:
 > Models including field names and their datatypes<br />
+- Name: String <br />
+- Description: String  <br />
+- Image: String <br />
+- Price: Number <br />
+- Tags/Style: String <br />
 
-Products Model:
-Name: String
-Description: String 
-Image: String
-Price: Number
-Tags/Style: String
-
-> A list of routes (e.g. `POST /pins/ allows users to post a picture of a pin`)<br />
-Index
-.GET’/products/Show different interior design styles on main page’
-New
-.GET’/products/new/Allow user to input information needed to add a new product’ 
-Delete
-.DELETE’/products/:id/Once product has been added to user’s personalized page, user will be able to delete a product’ 
-Update
-.PUT’/products/:id/User is able to input info needed to update tags, price’ 
-Create 
-.POST’/products/User is able to create/add new product’ 
-Edit 
-.GET’/products/:id/edit/User is able to edit a product’s tag/price’
-Show 
-.GET’/products/:id/Show interior design style and product details’
+## A list of routes <br />
+>Index <br />
+- .GET’/products/Show different interior design styles on main page’ <br />
+>New <br />
+- .GET’/products/new/Allow user to input information needed to add a new product’ <br />
+>Delete <br />
+- .DELETE’/products/:id/Once product has been added to user’s personalized page, user will be able to delete a product’ <br />
+>Update <br />
+- .PUT’/products/:id/User is able to input info needed to update tags, price’ <br />
+>Create <br />
+- .POST’/products/User is able to create/add new product’ <br />
+>Edit <br />
+- .GET’/products/:id/edit/User is able to edit a product’s tag/price’ <br />
+>Show <br />
+- .GET’/products/:id/Show interior design style and product details’ <br />
 
 ## Wireframes
 > 
