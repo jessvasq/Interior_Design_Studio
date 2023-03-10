@@ -5,7 +5,12 @@ const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 require('dotenv').config();
 const Idea = require('./models/ideas.js');
+const Mediterranean = require('./models/ideas.js');
+
 const ideasController = require('./controllers/ideas.js');
+const designsController = require('./controllers/designs.js');
+const mediterraneanController = require('./controllers/mediterranean.js');
+
 
 //DATABASE CONNECTION 
 
@@ -19,6 +24,8 @@ mongoose.connect(process.env.DATABASE_URL, {
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.use('/ideas', ideasController) 
+app.use('/designs', designsController) 
+app.use('/mediterranean', mediterraneanController);
 
 //ERROR MESSAGES
 
