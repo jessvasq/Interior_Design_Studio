@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interior Design Studio</title>
+</head>
+<body>
+    <style type="text/css">
+        img{
+            height: 800px;
+            height: 800px;
+        }
+        </style>
+        
+
+    <a href="/designs">Interior Design Styles</a>
+    
+    <h1>Mediterranean Furniture</h1>
+    
+    <p>Though not exhaustive, many Mediterranean-style homes will make use of the following design motifs: <br>
+        * Textured walls, often stucco on the exterior with plaster walls or stone walls on the interior <br>
+        * Red terra-cotta roofs <br>
+        * Archways <br>
+        * Decorative ironwork, often wrought iron <br>
+        * Eclectic tiles <br>
+        * A color scheme inspired by the sea including blue, green, yellow, red, orange, and other earthy tones <br>
+        * Exposed beams<br>
+        * Outdoor spaces to emphasize indoor-outdoor living<br>
+        * Plenty of natural light <br>
+        * Displayed Mediterranean decor, like ceramics and textiles<br>
+    </p>
+
+
+    <ul>
+        <% for(let i=0; i < mediterraneans.length; i++) { %>
+            <li>
+                
+                <a href="/mediterranean/<%=mediterraneans[i].id; %>">
+                    <%=mediterraneans[i].title;%></a><br>
+                <p <%=mediterraneans[i].id; %>><%=mediterraneans[i].description; %></p>
+                <a href="/mediterranean/<%=mediterraneans[i].id;%>"><img src="<%=mediterraneans[i].image;%>"></a>
+            
+                <form action="/mediterranean/<%=mediterraneans[i].id%>?_method=DELETE" method="POST">
+                    <input type="submit" value="Delete">
+                </form> 
+
+                <form action="/mediterranean/<%=mediterraneans[i]._id%>/edit">
+                   <input type="submit" value="Edit">
+                </form> 
+            </li>
+        <% } %>
+    </ul>
+
+    <a href="/mediterranean/new">Add Product</a>
+
+
+
+</body>
+</html>
