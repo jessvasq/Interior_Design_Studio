@@ -6,10 +6,12 @@ const methodOverride = require('method-override');
 require('dotenv').config();
 const Idea = require('./models/ideas.js');
 const Mediterranean = require('./models/mediterranean.js');
+const Industrial = require('./models/industrials.js');
 
 const ideasController = require('./controllers/ideas.js');
 const designsController = require('./controllers/designs.js');
 const mediterraneanController = require('./controllers/mediterranean.js');
+const industrialController = require('./controllers/industrials.js');
 
 
 //DATABASE CONNECTION 
@@ -27,6 +29,8 @@ app.use(methodOverride('_method'))
 app.use('/ideas', ideasController) 
 app.use('/designs', designsController) 
 app.use('/mediterranean', mediterraneanController);
+app.use('/industrial', industrialController);
+
 
 //ERROR MESSAGES
 

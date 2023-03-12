@@ -22,8 +22,16 @@
     <a href="<%= mediterranean.link%>" target="_blank">Visit the Store</a><br>
     <!-- Link:   <%= mediterranean.link%><br>  -->
 
+    <form action="/mediterranean/<%=mediterranean.id%>?_method=DELETE" method="POST">
+        <input type="submit" value="Delete">
+    </form> 
 
-    <a href="/mediterranean">Back to Ideas</a>
+    <form action="/mediterranean/<%=mediterranean._id%>/edit">
+       <input type="submit" value="Edit">
+    </form> 
+
+
+    <a href="/mediterranean">Back to Decor Ideas</a>
 
     <a href="/designs/mediProjects">Back to Mediterranean Style></a>
 
