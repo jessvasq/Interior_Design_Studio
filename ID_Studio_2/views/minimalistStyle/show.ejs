@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minimalist Show Page</title>
+</head>
+<body>
+
+        
+    <h1><%= minimalist.title %></h1>
+    <img src="<%= minimalist.image%>"><br>
+    Store: <br>
+    <%= minimalist.store %> <br>
+    Description: <br>
+    <%= minimalist.description %> <br>
+    Price: <br>
+     <%= minimalist.price%> <br>
+    Tags: <br>
+     <%= minimalist.tags %><br>
+    Additional Notes: <br>
+    <%= minimalist.notes %>
+    <br> 
+    <a href="<%= minimalist.link%>" target="_blank">Visit the Store</a><br>
+
+
+    <form action="/minimalist/<%=minimalist.id%>?_method=DELETE" method="POST">
+        <input type="submit" value="Delete">
+    </form> 
+
+    <form action="/minimalist/<%=minimalist._id%>/edit">
+        <input type="submit" value="Edit">
+     </form> 
+
+    <a href="/minimalist">Back to Decor Ideas</a>
+
+    <a href="/designs/minProjects">Back to Minimalism Design Style</a>
+
+</body>
+</html>

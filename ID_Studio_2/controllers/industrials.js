@@ -7,34 +7,34 @@ const Industrial = require('../models/industrials.js');
 
 
 // ****update products****
- router.get('/seed/', (req, res) => {
-   Industrial.create(
-      [
-        {
-          title: 'Shelf Unit',
-          store: 'IKEA',
-          image: 'https://www.ikea.com/us/en/images/products/fjaelkinge-shelf-unit-white__0849792_pe564013_s5.jpg?f=xl',
-          description: 'The long, slender shelves give the shelving unit a light and airy look. And the clean, simple lines make it easy to combine with many styles of  furniture. 46 1/2x76 "',
-          price: 249,
-          tags: 'Industrial style', 
-          notes: 'white',
-          link: 'https://www.ikea.com/us/en/p/fjaelkinge-shelf-unit-white-60221683/',
-        }, 
-        {
-              title: 'Boston Wooden 6 Drawer Dresser Brown',
-              store: 'Froy',
-              image: 'https://cdn.shopify.com/s/files/1/0220/3498/products/TOV-B7052-1_800x.jpg?v=1571439114',
-              description: 'Crafted from 100% acacia wood it offers style and durability all wrapped into a stunning dresser. Each piece is truly one of a kind made with naturally colored wood to create a unique pattern just for you, while the brass metal legs add a perfect contrast to the hues of the frame.',
-              price: 919,
-              tags: 'industrial style', 
-              notes: 'Dimensions: "57.1"W x 17.7"D x 34"H. Materials: Brown, Acacia Wood, Metal, Acacia Veneer',
-              link: 'https://froy.com/collections/dressers/products/boston-wooden-6-drawer-dresser-brown',
-            }, 
-      ],
-    (error, data)=> {
-        res.redirect('/industrial');
-    }
-  )});
+//  router.get('/seed/', (req, res) => {
+//    Industrial.create(
+//       [
+//         {
+//           title: 'Shelf Unit',
+//           store: 'IKEA',
+//           image: 'https://www.ikea.com/us/en/images/products/fjaelkinge-shelf-unit-white__0849792_pe564013_s5.jpg?f=xl',
+//           description: 'The long, slender shelves give the shelving unit a light and airy look. And the clean, simple lines make it easy to combine with many styles of  furniture. 46 1/2x76 "',
+//           price: 249,
+//           tags: 'Industrial style', 
+//           notes: 'white',
+//           link: 'https://www.ikea.com/us/en/p/fjaelkinge-shelf-unit-white-60221683/',
+//         }, 
+//         {
+//               title: 'Boston Wooden 6 Drawer Dresser Brown',
+//               store: 'Froy',
+//               image: 'https://cdn.shopify.com/s/files/1/0220/3498/products/TOV-B7052-1_800x.jpg?v=1571439114',
+//               description: 'Crafted from 100% acacia wood it offers style and durability all wrapped into a stunning dresser. Each piece is truly one of a kind made with naturally colored wood to create a unique pattern just for you, while the brass metal legs add a perfect contrast to the hues of the frame.',
+//               price: 919,
+//               tags: 'industrial style', 
+//               notes: 'Dimensions: "57.1"W x 17.7"D x 34"H. Materials: Brown, Acacia Wood, Metal, Acacia Veneer',
+//               link: 'https://froy.com/collections/dressers/products/boston-wooden-6-drawer-dresser-brown',
+//             }, 
+//       ],
+//     (error, data)=> {
+//         res.redirect('/industrial');
+//     }
+//   )});
   
 
 

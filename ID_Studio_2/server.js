@@ -7,11 +7,13 @@ require('dotenv').config();
 const Idea = require('./models/ideas.js');
 const Mediterranean = require('./models/mediterranean.js');
 const Industrial = require('./models/industrials.js');
+const Minimalist = require('./models/minimalists.js');
 
 const ideasController = require('./controllers/ideas.js');
 const designsController = require('./controllers/designs.js');
 const mediterraneanController = require('./controllers/mediterranean.js');
 const industrialController = require('./controllers/industrials.js');
+const minimalistController = require('./controllers/minimalists.js');
 
 
 //DATABASE CONNECTION 
@@ -30,7 +32,7 @@ app.use('/ideas', ideasController)
 app.use('/designs', designsController) 
 app.use('/mediterranean', mediterraneanController);
 app.use('/industrial', industrialController);
-
+app.use('/minimalist', minimalistController);
 
 //ERROR MESSAGES
 

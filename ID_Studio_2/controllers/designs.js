@@ -16,8 +16,8 @@ router.get('/inProjects', (req,res) => {
    });
 
 router.get('/minProjects', (req,res) => {
-  // res.render('index1.ejs')
-  res.send('minimalist projects accesed')
+   res.render('index3.ejs')
+  //res.send('minimalist projects accesed')
    });
 
         
