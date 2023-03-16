@@ -155,7 +155,7 @@ p.medT {
 }
 
 button {
-    background-color: black;
+  background-color: black;
   border-radius: 10px;
   box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
   color:white;
@@ -233,3 +233,37 @@ h3{
     margin-left: 420px;
     display: inline-block;
 }
+
+/* INDUSTRIALIST INDEX PAGE STYLING  */
+
+.container2 {
+    margin: 10px;
+    margin-left: 40px;
+}
+.img-collage2 {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+img#imgs2 {
+    height: 800px;
+    width: 900px;
+}
+
+
+/* MINIMALISM INDEX PAGE STYLING  */
+
+.container3 {
+    margin: 10px;
+    margin-left: 40px;
+}
+.img-collage3 {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+img#imgs3 {
+    height: 800px;
+    width: 900px;
+}
+

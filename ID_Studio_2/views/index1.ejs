@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Interior Design Studio</title>
-    <link rel="stylesheet" href="/style.css">
-</head>
+
+   <!-- ============ HEADER ============ -->
+   <header>
+    <%- include ('./partials/header.ejs') %>  
+  </header>
+
 <body>
-
-
     <h1>Mediterranean Style</h1>
     <p class="medT">“Because Mediterranean style homes are often found in warm, seaside locales, colors include sandy neutrals, striking blues, bright whites, and pops of vivid yellow, pink, orange, and green.”</p>
 
@@ -39,7 +37,7 @@
      </div>
 </div>
 
-    <!-- <div class="img-collage"> --> -->
+    <!-- <div class="img-collage"> --> 
     <h2>Mediterranean Fireplace</h2>
     <img src="https://media.architecturaldigest.com/photos/63ffa2c0b6d2e827c343925d/master/w_960,c_limit/Jeff_Andrews_Detroit_12.JPG"id="imgs">
     <!-- </div> -->
@@ -49,14 +47,8 @@
     <a href="/mediterranean"><button>View Furniture</button></a>
     <a href="/designs/mediProjects"><button class="top">TOP</button></a>
 
-<footer>
-    <nav>
-        <a id="link" href="/designs">Browse Interior Design Styles</a>
-    </nav>
-    <h3>Follow Us:</h3>
-   <img src="https://thenounproject.com/api/private/icons/1261644/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABkEmV-ip_Iiu4ruPndwOHUBch_kHd378xz2ElwySvIBRTBYuP0L5uR51tJFltM2I-HHicEHqzyKAQPopB_vVVCG4VXqw%3D%3D" id="social">
-   <img src="https://thenounproject.com/api/private/icons/5354924/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABkEmV-ip_Iiu4ruPndwOHUBch_kHd378xz2ElwySvIBRTBYuP0L5uR51tJFltM2I-HHicEHqzyKAQPopB_vVVCG4VXqw%3D%3D" id="social">
-   <img src="https://thenounproject.com/api/private/icons/11288/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABkEmV-ip_Iiu4ruPndwOHUBch_kHd378xz2ElwySvIBRTBYuP0L5uR51tJFltM2I-HHicEHqzyKAQPopB_vVVCG4VXqw%3D%3D" id="social">
-</footer>
+  <!-- ============ FOOTER ============ -->
+  <%- include ('./partials/footer.ejs') %>
+
 </body>
 </html>
