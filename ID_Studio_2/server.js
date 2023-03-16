@@ -27,9 +27,9 @@ mongoose.connect(process.env.DATABASE_URL, {
 
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
-app.use(methodOverride('_method'))
-app.use('/ideas', ideasController) 
-app.use('/designs', designsController) 
+app.use(express.static('public'));
+app.use(methodOverride('_method'));
+app.use('/designs', designsController);
 app.use('/mediterranean', mediterraneanController);
 app.use('/industrial', industrialController);
 app.use('/minimalist', minimalistController);
