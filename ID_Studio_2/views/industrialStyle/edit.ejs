@@ -2,24 +2,31 @@
   <!-- ============ HEADER ============ -->
   <%- include ('../partials/header.ejs') %>  
 
+  <style type="text/css">
+    body {
+      background-image: url("https://images.pexels.com/photos/4207788/pexels-photo-4207788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-size: cover;
+    }
+    </style>
+
 <body>
 
     <h1>Edit Product</h1>
+
+    <div class="container6">
         <form action="/industrial/<%= product.id %>?_method=PUT" method="POST">
-    		Title: <input type="text" name="title" value="<%=product.name%>"/><br/>
-    		Price: <input type="text" name="price" value="<%=product.price%>"/><br/>
-            tags: <input type="text" name="tags" value="<%=product.tags%>"/><br/>
-            Additional Notes: <input type="text" name="notes" value="<%=product.notes%>"/><br/>
-            Link: <input type="text" name="link" value="<%=product.link%>"/><br/>
+          <h3 class="prodTitle1">Title: <input class="box" type="text" name="title" value="<%=product.name%>"/><br/>
+          <h3 class="prodTitle1">Price: <input class="box"  type="text" name="price" value="<%=product.price%>"/><br/>
+          <h3 class="prodTitle1">  tags: <input class="box" type="text" name="tags" value="<%=product.tags%>"/><br/>
+          <h3 class="prodTitle1"> Additional Notes: <input class="box3" type="text" name="notes" value="<%=product.notes%>"/><br/>
+          <h3 class="prodTitle1">Link: <input class="box" type="text" name="link" value="<%=product.link%>"/><br/>
             <br/>
-            <input type="submit" name="" value="Submit Changes"/>
-        </form>
+            <input type="submit" name="" value="Submit Changes"  id="submitEd" />
+      </form>
+    </div>
 
+    <a id="link4" href="/mediterranean/">Back to Furniture</a>
 
-    <a href="/mediterranean/">Back to Furniture</a>
-
-     <!-- ============ FOOTER ============ -->
-     <%- include ('../partials/footer.ejs') %>
      
 </body>
 </html>

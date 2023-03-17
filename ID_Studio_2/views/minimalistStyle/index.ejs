@@ -3,25 +3,14 @@
   <%- include ('../partials/header.ejs') %> 
 
 <body>
-    <style type="text/css">
-        img{
-            height: 800px;
-            height: 800px;
-        }
-        </style>
-        
-
-    <a href="/designs">Interior Design Styles</a>
+    <a id="link" href="/designs/minProjects">Back to Minimalist Design Style</a>
     
     <h1>Minimalism Furniture</h1>
     
-    <p> 
+    <p class="prodInf"> 
         Although many minimalists focus on neutral tones and increasingly rely on white, a deliberate, temperate use of color is also possible.<br>
         The combination of different textures or the use of large-scale geometric shapes as well as typographic images also bring harmony to a pure, uncluttered environment.<br>
-    </p>
-
-    <h1>Elements of Minimalist Interior Design</h1>
-    <p> * Simple lines <br>
+        * Simple lines <br>
         * Monochromatic or neutral color palettes <br>
         * Limited furniture <br>
         * Limited decorative objects <br>
@@ -32,19 +21,20 @@
    
     <ul>
         <% for(let i=0; i < minimalists.length; i++) { %>
-            <li>
-                
-                <a href="/minimalist/<%=minimalists[i].id; %>">
+
+     <div class="container4" >
+     <div class="img-collage4">
+
+                <a href="/minimalist/<%=minimalists[i].id;%>"><img src="<%=minimalists[i].image;%>"id="imgs4"></a>
+                <a class="product" href="/minimalist/<%=minimalists[i].id; %>">
                     <%=minimalists[i].title;%></a><br>
-                <p <%=minimalists[i].id; %>><%=minimalists[i].description; %></p>
-                <a href="/minimalist/<%=minimalists[i].id;%>"><img src="<%=minimalists[i].image;%>"></a>
-            
-            </li>
+</div>
+</div>
         <% } %>
     </ul>
 
-    <a href="/minimalist/new">Add New Product to Studio</a>
-    <a href="/minimalist">TOP</a>
+    <a href="/minimalist/new"><button>Add Product</button></a>
+  
 
      <!-- ============ FOOTER ============ -->
      <%- include ('../partials/footer.ejs') %>

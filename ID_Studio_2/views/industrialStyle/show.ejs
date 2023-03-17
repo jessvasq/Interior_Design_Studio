@@ -1,36 +1,50 @@
 <!DOCTYPE html>
   <!-- ============ HEADER ============ -->
   <%- include ('../partials/header.ejs') %>  
+  <nav>
+    <a id="link" href="/industrial">Back to Products</a>
+</nav>
+
+  <style type="text/css">
+    body {
+      background-image: url("https://images.pexels.com/photos/4207788/pexels-photo-4207788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-size: cover;
+    }
+  </style>
 
 <body>
 
+  <div class="container5">  
     <h1><%= industrial.title %></h1>
-    <img src="<%= industrial.image%>"><br>
+    <img src="<%= industrial.image%>"id="imgs5"><br>
+    <h3 class="prodTitle">
     Store: <br>
-    <%= industrial.store %> <br>
+    <h3 class="prodInfo"><%= industrial.store %> <br></h3>
+    <h3 class="prodTitle">
     Description: <br>
-    <%= industrial.description %> <br>
+    <h3 class="prodInfo"><%= industrial.description %> <br></h3>
+    <h3 class="prodTitle">
     Price: <br>
-     <%= industrial.price%> <br>
+    <h3 class="prodInfo"><%= industrial.price%> <br></h3>
+    <h3 class="prodTitle">
     Tags: <br>
-     <%= industrial.tags %><br>
+    <h3 class="prodInfo"><%= industrial.tags %><br></h3>
+    <h3 class="prodTitle">
     Additional Notes: <br>
-    <%= industrial.notes %>
-    <br> 
-    <a href="<%= industrial.link%>" target="_blank">Visit the Store</a><br>
-    <!-- Link:   <%= industrial.link%><br>  -->
+    <h3 class="prodInfo"><%= industrial.notes %><br></h3>
+    <a class="prodInfo" href="<%= industrial.link%>" target="_blank">Visit the Store</a><br>
+  </div>
+
 
     <form action="/industrial/<%=industrial.id%>?_method=DELETE" method="POST">
-        <input type="submit" value="Delete">
+        <input type="submit" value="Delete" id="delete">
     </form> 
 
     <form action="/industrial/<%=industrial._id%>/edit">
-        <input type="submit" value="Edit">
+        <input type="submit" value="Edit" id="edit">
      </form> 
-
-    <a href="/industrial">Back to Decor Ideas</a>
-
-    <a href="/designs/inProjects">Back to Industrial Design Style></a>
+  
+    <a id="link1" href="/designs/inProjects">Back to Industrial Design Style></a>
 
  <!-- ============ FOOTER ============ -->
  <%- include ('../partials/footer.ejs') %>

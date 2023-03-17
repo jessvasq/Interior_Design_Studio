@@ -1,37 +1,51 @@
 <!DOCTYPE html>
   <!-- ============ HEADER ============ -->
   <%- include ('../partials/header.ejs') %> 
+<nav>
+    <a id="link" href="/minimalist">Back to Products</a>
+</nav>
+
+
+  <style type="text/css">
+    body {
+      background-image: url("https://images.pexels.com/photos/4207788/pexels-photo-4207788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-size: cover;
+    }
+  </style>
 
 <body>
-
-        
+     
+<div class="container5" >   
     <h1><%= minimalist.title %></h1>
-    <img src="<%= minimalist.image%>"><br>
+    <img src="<%= minimalist.image%>"id="imgs5"><br>
+    <h3 class="prodTitle">
     Store: <br>
-    <%= minimalist.store %> <br>
+    <h3 class="prodInfo"><%= minimalist.store %> <br></h3>
+    <h3 class="prodTitle">
     Description: <br>
-    <%= minimalist.description %> <br>
+    <h3 class="prodInfo"><%= minimalist.description %> <br></h3>
+    <h3 class="prodTitle">
     Price: <br>
-     <%= minimalist.price%> <br>
+    <h3 class="prodInfo"><%= minimalist.price%> <br></h3>
+    <h3 class="prodTitle">
     Tags: <br>
-     <%= minimalist.tags %><br>
+    <h3 class="prodInfo"><%= minimalist.tags %><br></h3>
+    <h3 class="prodTitle">
     Additional Notes: <br>
-    <%= minimalist.notes %>
-    <br> 
-    <a href="<%= minimalist.link%>" target="_blank">Visit the Store</a><br>
+    <h3 class="prodInfo"><%= minimalist.notes %></h3><br> 
+    <a class="prodInfo" href="<%= minimalist.link%>" target="_blank">Visit the Store</a><br>
 
-
+</div>
     <form action="/minimalist/<%=minimalist.id%>?_method=DELETE" method="POST">
-        <input type="submit" value="Delete">
+        <input type="submit" value="Delete" id="delete">
     </form> 
 
     <form action="/minimalist/<%=minimalist._id%>/edit">
-        <input type="submit" value="Edit">
+        <input type="submit" value="Edit" id="edit">
      </form> 
 
-    <a href="/minimalist">Back to Decor Ideas</a>
 
-    <a href="/designs/minProjects">Back to Minimalism Design Style</a>
+    <a id="link1" href="/designs/minProjects">Back to Minimalist Design Style</a>
     
  <!-- ============ FOOTER ============ -->
     <%- include ('../partials/footer.ejs') %>

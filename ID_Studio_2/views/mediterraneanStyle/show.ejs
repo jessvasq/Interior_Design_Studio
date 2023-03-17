@@ -1,37 +1,50 @@
 <!DOCTYPE html>
   <!-- ============ HEADER ============ -->
   <%- include ('../partials/header.ejs') %>  
+  
+  <style type="text/css">
+    body {
+      background-image: url("https://images.pexels.com/photos/4207788/pexels-photo-4207788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-size: cover;
+    }
+    </style>
 
 <body>
+  <a id="link" href="/mediterranean">Back to Decor Ideas</a>
 
+<div class="container5" >
     <h1><%= mediterranean.title %></h1>
-    <img src="<%= mediterranean.image%>"><br>
-    Store: <br>
-    <%= mediterranean.store %> <br>
-    Description: <br>
-    <%= mediterranean.description %> <br>
-    Price: <br>
-     <%= mediterranean.price%> <br>
-    Tags: <br>
-     <%= mediterranean.tags %><br>
-    Additional Notes: <br>
-    <%= mediterranean.notes %>
+    <img src="<%= mediterranean.image%>"id="imgs5"><br>
+   <h3 class="prodTitle">
+    Store: <br></h3>
+    <h3 class="prodInfo"><%= mediterranean.store %> <br></h3>
+    <h3 class="prodTitle">
+    Description: <br></h3>
+    <h3 class="prodInfo"> <%= mediterranean.description %> <br></h3>
+    <h3 class="prodTitle">
+    Price: <br></h3>
+    <h3 class="prodInfo"><%= mediterranean.price%> <br></h3>
+    <h3 class="prodTitle">
+    Tags: <br></h3>
+    <h3 class="prodInfo"><%= mediterranean.tags %><br></h3>
+    <h3 class="prodTitle">
+    Additional Notes: <br></h3>
+    <h3 class="prodInfo"><%= mediterranean.notes %></h3>
     <br> 
-    <a href="<%= mediterranean.link%>" target="_blank">Visit the Store</a><br>
-    <!-- Link:   <%= mediterranean.link%><br>  -->
 
+    <a class="prodInfo" href="<%= mediterranean.link%>" target="_blank">Visit the Store</a><br>
+  
+  </div>
     <form action="/mediterranean/<%=mediterranean.id%>?_method=DELETE" method="POST">
-        <input type="submit" value="Delete">
+        <input type="submit" value="Delete" id="delete">
     </form> 
 
     <form action="/mediterranean/<%=mediterranean._id%>/edit">
-       <input type="submit" value="Edit">
+       <input type="submit" value="Edit" id="edit">
     </form> 
 
 
-    <a href="/mediterranean">Back to Decor Ideas</a>
-
-    <a href="/designs/mediProjects">Back to Mediterranean Style></a>
+    <a id="link1" href="/designs/mediProjects">Back to Mediterranean Style</a>
 
    <!-- ============ FOOTER ============ -->
    <%- include ('../partials/footer.ejs') %>
