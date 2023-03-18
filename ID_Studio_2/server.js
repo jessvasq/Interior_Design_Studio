@@ -1,15 +1,15 @@
-//DEPENDENCIES
+//REQUIRE DEPENDENCIES
 const express = require('express'); 
 const app = express();  
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 require('dotenv').config();
-const Idea = require('./models/ideas.js');
+//REQUIRE MODELS 
 const Mediterranean = require('./models/mediterranean.js');
 const Industrial = require('./models/industrials.js');
 const Minimalist = require('./models/minimalists.js');
 
-const ideasController = require('./controllers/ideas.js');
+//REQUIRE CONTROLLERS 
 const designsController = require('./controllers/designs.js');
 const mediterraneanController = require('./controllers/mediterranean.js');
 const industrialController = require('./controllers/industrials.js');

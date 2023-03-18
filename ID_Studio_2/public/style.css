@@ -27,7 +27,7 @@ p.medText, p.minText, p.inText {
     word-wrap: break-word;
     color: white;
     text-align: center;
-
+    font-weight: bolder;
 }
 
 
@@ -43,6 +43,7 @@ p.minText {
     word-wrap: break-word;
     color: white;
     text-align: center;
+    font-weight: bolder;
 
 }
 
@@ -58,7 +59,7 @@ p.inText {
     word-wrap: break-word;
     color: white;
     text-align: center;
-
+    font-weight: bolder;
 }
 
 
