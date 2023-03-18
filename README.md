@@ -33,7 +33,8 @@ Help users find home decor products information and find their style/inspo to re
 - .GET’/products/:id/Show interior design style and product details’ <br />
 
 ## Wireframes
-> 
+> ![Project_2 Wireframe_JN](https://user-images.githubusercontent.com/119137671/226081719-4a224a7d-108f-4bb6-a8be-3d7d51fa0b48.jpeg)
+
 
 ## User Stories
 
@@ -56,4 +57,6 @@ EJS Partials
 CSS framework 
 If time allows, include sign up/log in functionality, with encrypted passwords
 
+### Sources 
+https://www.architecturaldigest.com/; https://www.architecturaldigest.com/story/most-poular-interior-design-styles#mediterran 
 
