@@ -57,4 +57,6 @@ EJS Partials
 CSS framework 
 If time allows, include sign up/log in functionality, with encrypted passwords
 
+### Sources 
+https://www.architecturaldigest.com/; https://www.architecturaldigest.com/story/most-poular-interior-design-styles#mediterran 
 
