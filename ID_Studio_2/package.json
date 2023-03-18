@@ -1,6 +1,10 @@
 {
   "name": "id_studio_2",
   "version": "1.0.0",
+  "engines": {
+    "node": "18.12.1"
+  },
+
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -8,7 +12,7 @@
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "Jessica Nieves",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
