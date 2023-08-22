@@ -4,13 +4,13 @@
   
   <style type="text/css">
     body {
-      background-image: url("https://images.pexels.com/photos/4207788/pexels-photo-4207788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-      background-size: cover;
+      background-color: #B86F52;
     }
     </style>
+  
 
 <body>
-  <a id="link" href="/mediterranean">Back to Products</a>
+  <a class="link-products" href="/mediterranean">Back to Products</a>
 
 <div class="container5" >
     <h1><%= mediterranean.title %></h1>
@@ -35,19 +35,20 @@
     <a class="prodInfo" href="<%= mediterranean.link%>" target="_blank">Visit the Store</a><br>
   
   </div>
+  <div class="buttons">
     <form action="/mediterranean/<%=mediterranean.id%>?_method=DELETE" method="POST">
-        <input type="submit" value="Delete" id="delete">
+        <input type="submit" value="Delete" class="deletebttn">
     </form> 
 
     <form action="/mediterranean/<%=mediterranean._id%>/edit">
-       <input type="submit" value="Edit" id="edit">
+       <input type="submit" value="Edit" id="edit" class="editbttn">
     </form> 
+  </div>
 
-
-    <a id="link1" href="/designs/mediProjects">Back to Mediterranean Style</a>
 
    <!-- ============ FOOTER ============ -->
    <%- include ('../partials/footer.ejs') %>
+   <a class="link-style" href="/designs/mediProjects">Back to Mediterranean Style</a>
    
 </body>
 </html>

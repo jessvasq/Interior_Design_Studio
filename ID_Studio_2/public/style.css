@@ -214,7 +214,7 @@ background-color:  #fffcf5;
     font-size: 20px;
     text-decoration: none;
     margin-left: 1550px; 
-    margin-top: 900px;
+    margin-top: 960px;
     position: absolute;
     color: white;
 }
@@ -226,6 +226,7 @@ background-color:  #fffcf5;
     margin-top: -40px;
     position: absolute;
 }
+
 
 .link-products{
     font-size: 20px;
@@ -251,6 +252,13 @@ background-color:  #fffcf5;
     color: white;
     text-decoration: none;
     margin-left: 1500px;
+    position: absolute;
+    font-size: 20px;
+  }
+  .link-ideas1{
+    color: white;
+    text-decoration: none;
+    margin-left: 800px;
     position: absolute;
     font-size: 20px;
   }
@@ -284,7 +292,7 @@ footer {
 }
 
 .footer-container{
-    background-color: #4a4a4a;
+    background-color: #392A16;
     color: white;
 }
 
