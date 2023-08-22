@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
 
 /* INDEX PAGE STYLING  */
 body {
@@ -5,7 +6,7 @@ body {
     color: #634133
   }
 
- @import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
 img {
     border-radius: 10px;
 }
@@ -15,7 +16,6 @@ p.medText, p.minText, p.inText {
     padding: 10px;
     color: white;
 }
-
 
 p.medText, p.minText, p.inText {
     transition: .5s ease;
@@ -173,7 +173,7 @@ button {
   transition: all 200ms;
   margin-top: 20px;
   margin-left: 1700px;
-  }
+}
   
   button:hover {
 color: black;
@@ -181,11 +181,6 @@ background-color:  #fffcf5;
   transform: scale(1.05);
   }
 
-/* button.top {
-    position: absolute;
-  margin-top: 25px;
-  margin-left: 50px;
-  } */
   
 .top-bttn{
     margin-left: 40px;
@@ -197,8 +192,6 @@ color: black;
 background-color:  #fffcf5;
   transform: scale(1.05);
   }
-
-
 
 
 #link {
@@ -223,8 +216,9 @@ background-color:  #fffcf5;
     font-size: 20px;
     text-decoration: none;
     margin-left: 1550px; 
-    margin-top: -40px;
+    margin-top: 80px;
     position: absolute;
+    color: white;
 }
 
 
@@ -254,14 +248,10 @@ background-color:  #fffcf5;
     margin-left: 1500px;
     position: absolute;
     font-size: 20px;
+    margin-top: 20%;
   }
-  .link-ideas1{
-    color: white;
-    text-decoration: none;
-    margin-left: 800px;
-    position: absolute;
-    font-size: 20px;
-  }
+
+
 
   a#link1 {
     font-size: 20px;
@@ -395,8 +385,6 @@ a.product {
   }
 
 
-
-
   input[type=submit] {
     background-color: black;
     border-radius: 10px;
@@ -408,7 +396,6 @@ a.product {
     height: 40px;
     padding: 0 25px;
     transition: all 200ms;
-    /* margin-top: 10px; */
     top: -220px; 
     margin-left: 30px;
     position: relative;
@@ -436,6 +423,7 @@ input.editbttn {
   .container5{
     color: white;
   }
+
   .product-content{
     justify-content: center;
     width: 1200px;
@@ -455,8 +443,9 @@ input.editbttn {
     margin-left: 740px;
   }
 
-  .viewbttn{
+ .viewbttn{
     margin-right: 25px;
+    position: fixed;
   }
 
   input#submitEd {
@@ -518,11 +507,6 @@ input.box3 {
     width: 240px;
     margin-left: 115px;
 }
-
-/* 
-form {
-    margin-top: 200px;
-} */
 
     
 .link-furniture {

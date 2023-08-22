@@ -1,7 +1,10 @@
 <!DOCTYPE html>
   <!-- ============ HEADER ============ -->
   <%- include ('../partials/header.ejs') %>  
-  
+  <nav>
+     <a class="link-products" href="/mediterranean">Back to Products</a>
+  </nav>
+
   <style type="text/css">
     body {
       background-color: #B86F52;
@@ -10,30 +13,29 @@
   
 
 <body>
-  <a class="link-products" href="/mediterranean">Back to Products</a>
-
-<div class="container5" >
-    <h1><%= mediterranean.title %></h1>
-    <img src="<%= mediterranean.image%>"id="imgs5"><br>
-   <h3 class="prodTitle">
-    Store: <br></h3>
-    <h3 class="prodInfo"><%= mediterranean.store %> <br></h3>
-    <h3 class="prodTitle">
-    Description: <br></h3>
-    <h3 class="prodInfo"> <%= mediterranean.description %> <br></h3>
-    <h3 class="prodTitle">
-    Price: <br></h3>
-    <h3 class="prodInfo"><%= mediterranean.price%> <br></h3>
-    <h3 class="prodTitle">
-    Tags: <br></h3>
-    <h3 class="prodInfo"><%= mediterranean.tags %><br></h3>
-    <h3 class="prodTitle">
-    Additional Notes: <br></h3>
-    <h3 class="prodInfo"><%= mediterranean.notes %></h3>
-    <br> 
-
-    <a class="prodInfo" href="<%= mediterranean.link%>" target="_blank">Visit the Store</a><br>
   
+    <h1 class="index-title"><%= mediterranean.title %></h1>
+    <img src="<%= mediterranean.image%>"id="imgs5"><br>
+    <div class="container5">  
+      <div class="product-content">
+        <h3 class="prodTitle">
+          Store: <br></h3>
+          <h3 class="prodInfo"><%= mediterranean.store %> <br></h3>
+          <h3 class="prodTitle">
+          Description: <br></h3>
+          <h3 class="prodInfo"> <%= mediterranean.description %> <br></h3>
+          <h3 class="prodTitle">
+          Price: <br></h3>
+          <h3 class="prodInfo"><%= mediterranean.price%> <br></h3>
+          <h3 class="prodTitle">
+          Tags: <br></h3>
+          <h3 class="prodInfo"><%= mediterranean.tags %><br></h3>
+          <h3 class="prodTitle">
+          Additional Notes: <br></h3>
+          <h3 class="prodInfo"><%= mediterranean.notes %></h3>
+          <br> 
+        <a class="prodTitle" href="<%= mediterranean.link%>" target="_blank">Visit the Store</a><br>
+      </div>
   </div>
   <div class="buttons">
     <form action="/mediterranean/<%=mediterranean.id%>?_method=DELETE" method="POST">
@@ -45,10 +47,9 @@
     </form> 
   </div>
 
-
+  <a class="link-style" href="/designs/mediProjects">Back to Mediterranean Style</a>
    <!-- ============ FOOTER ============ -->
    <%- include ('../partials/footer.ejs') %>
-   <a class="link-style" href="/designs/mediProjects">Back to Mediterranean Style</a>
-   
+ 
 </body>
 </html>

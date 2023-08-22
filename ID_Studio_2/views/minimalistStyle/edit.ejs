@@ -2,10 +2,10 @@
   <!-- ============ HEADER ============ -->
     <%- include ('../partials/header.ejs') %>  
 
+    
     <style type="text/css">
       body {
-        background-image: url("https://images.pexels.com/photos/4207788/pexels-photo-4207788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-        background-size: cover;
+        background-color: #B86F52;
       }
       </style>
 
@@ -15,18 +15,18 @@
 
     <div class="container6">
         <form action="/minimalist/<%= product.id %>?_method=PUT" method="POST">
-    		<h3 class="prodTitle1">Title: <input class="box" type="text" name="title" value="<%=product.name%>"/><br/>
-        <h3 class="prodTitle1">Price: <input class="box" type="text" name="price" value="<%=product.price%>"/><br/>
-        <h3 class="prodTitle1">tags: <input class="box" type="text" name="tags" value="<%=product.tags%>"/><br/>
-        <h3 class="prodTitle1"> Additional Notes: <input class="box3" type="text" name="notes" value="<%=product.notes%>"/><br/>
-        <h3 class="prodTitle1">Link: <input class="box" type="text" name="link" value="<%=product.link%>"/><br/>
+    		<h3 class="prodTitle">Title: <input class="box" type="text" name="title" value="<%=product.name%>"/><br/>
+        <h3 class="prodTitle">Price: <input class="box" type="text" name="price" value="<%=product.price%>"/><br/>
+        <h3 class="prodTitle">tags: <input class="box" type="text" name="tags" value="<%=product.tags%>"/><br/>
+        <h3 class="prodTitle"> Additional Notes: <input class="box3" type="text" name="notes" value="<%=product.notes%>"/><br/>
+        <h3 class="prodTitle">Link: <input class="box" type="text" name="link" value="<%=product.link%>"/><br/>
             <br/>
             <input type="submit" name="" value="Submit Changes" id="submitEd"/>
            
         </form>
       </div>
 
-    <a id="link4" href="/minimalist/">Back to Furniture</a>
+    <a class="link-furniture" href="/minimalist/">Back to Furniture</a>
 
 
 </body>
