@@ -1,9 +1,11 @@
 
 /* INDEX PAGE STYLING  */
-/* body {
+body {
     background-color: #fffafa;
-  } */
+    color: #634133
+  }
 
+ @import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
 img {
     border-radius: 10px;
 }
@@ -73,7 +75,7 @@ p.inText {
 }
 
 .img2 {
-    height: 805px;
+    height: 800px;
     margin-left: 9px;
 }
 .container:hover .img1 {
@@ -118,20 +120,20 @@ p.inText {
     }
 }
 
-h2 {
+#styles {
     text-align: center;
-    font-style: italic;
-    margin-top: 60px;
+    margin-top: 20px;
+    color: #634133;
 
 }
 
-h1 {
+
+.main-title{
     text-align: center;
-    font-style: italic;
-    margin: 70px;
     font-size: 50px;
+    font-family: 'Bitter', serif;
+    text-transform: uppercase;
 }
-
 
 /* MEDITERRANEAN INDEX PAGE STYLING  */
 
@@ -153,7 +155,7 @@ img#imgs {
 }
 
 p.medT {
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     margin: 40px;
 }
@@ -179,12 +181,17 @@ background-color:  #fffcf5;
   transform: scale(1.05);
   }
 
-button.top {
+/* button.top {
     position: absolute;
   margin-top: 25px;
   margin-left: 50px;
-  }
+  } */
   
+.top-bttn{
+    margin-left: 40px;
+    margin-top: -40px;
+}
+
 button.top:hover {
 color: black;
 background-color:  #fffcf5;
@@ -194,30 +201,58 @@ background-color:  #fffcf5;
 
 
 
-a#link {
+#link {
     font-size: 20px;
-    color: black;
-    font-weight: lighter;
     text-decoration: none;
-    background-color: #fffcf5;
-    margin-left: 35px;
-    margin-top: -35px;
-    padding: 1px;
-    color: black;
+    margin-left: 1550px; 
+    margin-top: 880px;
     position: absolute;
+    color: white;
   }
 
-  a#linkIn {
+.link-styles{
     font-size: 20px;
-    color: black;
-    font-weight: lighter;
     text-decoration: none;
-    background-color: #fffcf5;
+    margin-left: 1550px; 
+    margin-top: 900px;
+    position: absolute;
+    color: white;
+}
+
+.link-style{
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 1550px; 
+    margin-top: -40px;
+    position: absolute;
+}
+
+.link-products{
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 1680px; 
+    margin-bottom: 80px;
+    position: absolute;
+    color: white;
+  }
+
+  #linkIn {
+    font-size: 20px;
+    text-decoration: none;
     margin-left: 35px;
     margin-top: 25px;
     padding: 1px;
-    color: black;
     position: absolute;
+    color: white;
+  }
+
+
+  .link-ideas{
+    color: white;
+    text-decoration: none;
+    margin-left: 1500px;
+    position: absolute;
+    font-size: 20px;
   }
 
   a#link1 {
@@ -233,15 +268,24 @@ a#link {
     float: right;
   }
 
-a#link:hover, a#link4:hover, a#link1:hover, a#link2:hover, a#linkIn:hover{
-    color:white;
-    background-color: black;
-}
 
 footer {
     margin-top: 25px;
-    background-color:#fffcf5 ;
-    height: 200px;
+    height: 20px;
+}
+
+.footer-title{
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    margin-top: 40px;
+}
+
+.footer-container{
+    background-color: #4a4a4a;
+    color: white;
 }
 
 h3 {
@@ -250,15 +294,18 @@ h3 {
 }
 
 #social {
-    height: 60px;
-    width: 60px;
-    padding: 0;
-    margin-left: 420px;
-    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin-left: 450px;
+    margin-bottom: 20px;
 }
 
 /* INDUSTRIALIST INDEX PAGE STYLING  */
 
+.category-title{
+    text-align: center;
+    text-transform: uppercase;
+}
 .container2 {
     margin: 10px;
     margin-left: 40px;
@@ -273,7 +320,17 @@ img#imgs2 {
     width: 900px;
 }
 
+.index-title{
+    text-align: center;
+    text-transform: uppercase;
+}
 
+.prodInf{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
 /* MINIMALISM INDEX PAGE STYLING  */
 
 .container3 {
@@ -320,11 +377,6 @@ a.product {
     opacity: 0.3;    
 }
 
-.prodInf {
-    font-size: 18px;
-    text-align: start;
-    margin-left: 90px;
-}
 
 
   img#imgs5 {
@@ -334,29 +386,8 @@ a.product {
     width: 25%;
   }
 
-  .prodTitle {
-    font-size: 25px;
-    color: black;
-    text-align: start;
-    margin-left: 740px;
-    word-wrap: break-word;
-    width: 400px;
-    margin-top: 0px;
-  }
-
-  .prodInfo {
-    font-size: 20px;
-    color: black;
-    text-align: start;
-    margin-left: 760px;
-    word-wrap: break-word;
-    width: 400px;
-    font-weight: lighter;
-    margin-top: -10px;
-  }
 
 
- 
 
   input[type=submit] {
     background-color: black;
@@ -375,17 +406,49 @@ a.product {
     position: relative;
   }
 
-  input#edit {
+input.editbttn {
     position: relative;
-    top: -460px;
-    margin-left: 1750px;
+
+    margin-left: 100px;
   }
 
-  input#add {
+  input.add {
     position: absolute;
     margin-left: 100px;
-    top: 730px;
+    top: 600px;
     font-size: 18px;
+  }
+
+  .buttons{
+    display: flex;
+    margin-top: 15%;
+    justify-content: center;
+  }
+
+  .container5{
+    color: white;
+  }
+  .product-content{
+    justify-content: center;
+    width: 1200px;
+  }
+
+  .prodTitle {
+    font-size: 25px;
+    text-align: start;
+    margin-left: 740px;
+    width: 400px;
+    margin-top: 0px;
+    color: #634133
+  }
+
+  .prodInfo{
+    text-align: center;
+    margin-left: 740px;
+  }
+
+  .viewbttn{
+    margin-right: 25px;
   }
 
   input#submitEd {
@@ -448,21 +511,19 @@ input.box3 {
     margin-left: 115px;
 }
 
-
+/* 
 form {
     margin-top: 200px;
-}
+} */
 
     
-a#link4 {
+.link-furniture {
     font-size: 20px;
-    color: black;
     font-weight: lighter;
     text-decoration: none;
-    background-color: #fffcf5;
     margin-top: 30px;
     margin-left: 1700px;
     padding: 5px;
-    color: black;
     position: absolute;
+    color: white;
 }
