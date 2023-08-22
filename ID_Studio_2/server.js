@@ -26,9 +26,9 @@ const minimalistController = require('./controllers/minimalists.js');
 
 // DATABASE CONNECTION
 // connect to the database either via heroku or locally
-const MONGODB_URI = process.env.MONGODB_URI;
+const URI = process.env.MONGODB_URI;
 mongoose.set('strictQuery', true);
-mongoose.connect(MONGODB_URI , {
+mongoose.connect(URI , {
     useNewUrlParser: false,
 });
 
